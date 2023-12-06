@@ -1,41 +1,84 @@
-import React, { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+// import { Link, NavLink } from "react-router-dom";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faPizzaSlice} from "@fortawesome/free-solid-svg-icons/faPizzaSlice";
+import { Link} from "react-scroll";
+
+
+
 
 function Header() {
-    const [isMenuOpen, setMenuOpen] = useState(false);
+    const headerStyle = {
+        position: 'sticky',
+        top: 0,
+        backgroundColor: '#fffbf6',
+        zIndex: 1000,
 
-    const toggleMenu = () => {
-        setMenuOpen(!isMenuOpen);
     };
-
     return (
-        <header>
+        <header style={headerStyle}>
+
             {/* Use Link for the logo */}
-            <Link to="/" className="logo">
-                <img src="/assets/img/logo.png" alt="logo" />
+            <Link activeClass="active"
+                  to="home"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration= {500}
+                  activeClassName="selected" className="logo">
+                <img
+                    src="/assets/img/logo.png"
+                    alt="logo"
+                    style={{ marginLeft: "40px" }}                />
             </Link>
-
-            {/* Hamburger Icon */}
-            <div id="menu-icon" onClick={toggleMenu}>
-                <i className={`fas ${isMenuOpen ? "fa-times" : "fa-bars"}`}></i>
-            </div>
-
-            {/* Navigation Menu */}
-            <ul className={`navbar ${isMenuOpen ? "open" : ""}`}>
+            <ul className="navbar">
                 {/* Use Link for each navigation item */}
                 <li>
-                    <NavLink to="/home">Home</NavLink>
+                    <Link activeClass="active"
+                          to="home"
+                          spy={true}
+                          smooth={true}
+                          offset={-70}
+                          duration= {500}
+                          activeClassName="selected"
+                        >Home</Link>
                 </li>
                 <li>
-                    <NavLink to="/about">About</NavLink>
+                    <Link
+                        activeClass="active"
+                        to="about"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration= {500}
+                        activeClassName="selected"
+                    >About</Link>
                 </li>
                 <li>
-                    <NavLink to="/menu">Menu</NavLink>
+                    <Link
+                        activeClass="active"
+                        to="menu"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration= {500}
+                        activeClassName="selected"
+                        >Menu</Link>
                 </li>
                 <li>
-                    <NavLink to="/contact">Contact</NavLink>
+                    <Link
+                        activeClass="active"
+                        to="contact"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration= {500}
+                        activeClassName="selected"
+                    >Contact</Link>
                 </li>
             </ul>
+            <div className="pizza-icon">
+                <FontAwesomeIcon icon={faPizzaSlice} size="2xl" style={{color: "#f29121",}} />
+            </div>
         </header>
     );
 }
