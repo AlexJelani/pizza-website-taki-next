@@ -77,7 +77,7 @@ function Header() {
                 </li>
             </ul>
             <div className="pizza-icon">
-                <FontAwesomeIcon icon={faPizzaSlice} size="2xl" style={{color: "#f29121",}} />
+                <FontAwesomeIcon icon={faPizzaSlice} size="2xl" style={{color: "#f29121", marginRight:"40px"}} />
             </div>
         </header>
     );
