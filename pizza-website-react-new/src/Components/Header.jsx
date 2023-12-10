@@ -24,7 +24,7 @@ function Header() {
                   smooth={true}
                   offset={-70}
                   duration= {500}
-                  activeClassName="selected" className="logo">
+                  activeclassname="selected" className="logo">
                 <img
                     src="/assets/img/logo.png"
                     alt="logo"
@@ -39,7 +39,7 @@ function Header() {
                           smooth={true}
                           offset={-70}
                           duration= {500}
-                          activeClassName="selected"
+                          activeclassname="selected"
                         >Home</Link>
                 </li>
                 <li>
@@ -50,7 +50,7 @@ function Header() {
                         smooth={true}
                         offset={-70}
                         duration= {500}
-                        activeClassName="selected"
+                        activeclassname="selected"
                     >About</Link>
                 </li>
                 <li>
@@ -61,7 +61,7 @@ function Header() {
                         smooth={true}
                         offset={-70}
                         duration= {500}
-                        activeClassName="selected"
+                        activeclassname="selected"
                         >Menu</Link>
                 </li>
                 <li>
@@ -72,7 +72,7 @@ function Header() {
                         smooth={true}
                         offset={-70}
                         duration= {500}
-                        activeClassName="selected"
+                        activeclassname="selected"
                     >Contact</Link>
                 </li>
             </ul>
