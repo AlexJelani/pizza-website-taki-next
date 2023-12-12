@@ -1,7 +1,9 @@
 // import { Link, NavLink } from "react-router-dom";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faPizzaSlice} from "@fortawesome/free-solid-svg-icons/faPizzaSlice";
+import {faPhone} from "@fortawesome/free-solid-svg-icons/faPhone";
 import { Link} from "react-scroll";
+import styles from '../styles/Header.module.css'
+
 
 
 
@@ -15,23 +17,16 @@ function Header() {
 
     };
     return (
-        <header style={headerStyle}>
+        <header style={headerStyle} className={styles.header}>
 
-            {/* Use Link for the logo */}
-            <Link activeClass="active"
-                  to="home"
-                  spy={true}
-                  smooth={true}
-                  offset={-70}
-                  duration= {500}
-                  activeclassname="selected" className="logo">
-                <img
-                    src="/assets/img/logo.png"
-                    alt="logo"
-                    style={{ marginLeft: "40px" }}                />
-            </Link>
-            <ul className="navbar">
+
+
+            <ul className={styles.navbar}>
                 {/* Use Link for each navigation item */}
+                <div className={styles.phoneicon}>
+                    <FontAwesomeIcon icon={faPhone} size="lg" style={{color: "#f29121"}} />
+                    <p className={styles.phoneicon}>343-3323-2324</p>
+                </div>
                 <li>
                     <Link activeClass="active"
                           to="home"
@@ -53,6 +48,20 @@ function Header() {
                         activeclassname="selected"
                     >About</Link>
                 </li>
+                {/* Use Link for the logo */}
+                <Link activeClass="active"
+                      to="home"
+                      spy={true}
+                      smooth={true}
+                      offset={-70}
+                      duration= {500}
+                      activeclassname="selected" className="logo">
+                <img
+                    src="/assets/img/logo.png"
+                    alt="logo"
+                    className={styles.logo}/>
+                </Link>
+
                 <li>
                     <Link
                         activeClass="active"
@@ -76,9 +85,7 @@ function Header() {
                     >Contact</Link>
                 </li>
             </ul>
-            <div className="pizza-icon">
-                <FontAwesomeIcon icon={faPizzaSlice} size="2xl" style={{color: "#f29121", marginRight:"40px"}} />
-            </div>
+
         </header>
     );
 }
