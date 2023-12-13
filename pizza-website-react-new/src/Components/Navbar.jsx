@@ -1,7 +1,8 @@
 import styles from "../styles/Navbar.module.css";
-import {faPhone} from "@fortawesome/free-solid-svg-icons/faPhone";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faPhone} from "@fortawesome/free-solid-svg-icons/faPhone"
+import {  faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { Link} from "react-scroll";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 
 const Navbar = () => {
@@ -48,7 +49,7 @@ const Navbar = () => {
                           offset={-70}
                           duration= {500}
                           activeclassname="selected"
-                        className={styles.listItem}>Events</Link>
+                        className={styles.listItem}>About</Link>
                     <Link to="blog"
                           spy={true}
                           smooth={true}
@@ -65,7 +66,16 @@ const Navbar = () => {
                         className={styles.listItem}>Contact</Link>
                 </ul>
             </div>
-
+            <div className={styles.item}>
+                <div className={styles.socialicons}>
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                        <FontAwesomeIcon icon={faFacebook} size="2x" />
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                        <FontAwesomeIcon icon={faInstagram} size="2x" />
+                    </a>
+                </div>
+            </div>
         </div>
     );
 };
