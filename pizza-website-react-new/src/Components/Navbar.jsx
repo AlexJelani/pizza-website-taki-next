@@ -19,7 +19,7 @@ const Navbar = () => {
             <div className={styles.item}>
                 <ul className={styles.list}>
                     <Link activeClass="active"
-                          to="home"
+                          to="Featured"
                           spy={true}
                           smooth={true}
                           offset={-70}
