@@ -23,7 +23,9 @@
     justify-content: center;
 }
 
-
+.item:last-child {
+    justify-content: flex-end;
+}
 
 .callButton {
     background-color: white;
@@ -64,24 +66,24 @@
     font-weight: 500;
 }
 
-.cart{
-    position: relative;
+
+
+
+/* Add these styles to Navbar.module.css */
+.socialicons {
+    display: flex;
+    align-items: flex-end;
 }
 
-.counter{
-    position: absolute;
-    top: -10px;
-    right: -10px;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: white;
-    padding: 3px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    color: #d1411e;
+.socialicons a {
+    margin-left: 20px; /* Adjust the margin as needed */
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.socialicons a:hover {
+    color: #000000 ; /* Change the color on hover as needed */
 }
 
 @media screen and (max-width:480px) {
