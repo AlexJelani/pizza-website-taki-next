@@ -1,4 +1,10 @@
-function About(){
+import React from 'react';
+import styles from '../styles/About.module.css'; // Import the CSS module
+
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import {Link} from "react-scroll";
+
+function About() {
     return (
         <section className="about" id="about">
             <div className="about-img">
@@ -6,21 +12,46 @@ function About(){
             </div>
             <div className="about-text">
                 <h2>
-                    The Delicious Food
-                    <br /> For a Good Mood
+                    Welcome to
+                    <br /> Taki Pizza
                 </h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, ipsum?
-                    <br />
-                    <br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
-                    dolore pariatur! Enim inventore excepturi laudantium necessitatibus
-                    placeat mollitia, incidunt consequatur.
-                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, ipsum?<br></br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, dolore pariatur! Enim inventore excepturi laudantium necessitatibus placeat mollitia, incidunt consequatur.</p>
+
+                <div className={styles['about-inner']}>
+                    <h5>
+                        <i className="fas fa-arrow-alt-circle-right" style={{color:"red"}}></i>Good Quality
+                    </h5>
+                    <h5>
+                        <i className="fas fa-arrow-alt-circle-right" style={{color:"red"}}></i>Fresh Vegetables
+                    </h5>
+                    <h5>
+                        <i className="fas fa-arrow-alt-circle-right" style={{color:"red"}}></i>Homemade crust
+                    </h5>
+                    <h5>
+                        <i className="fas fa-arrow-alt-circle-right" style={{color:"red"}}></i>Best Price
+                    </h5>
+                    <h5>
+                        <i className="fas fa-arrow-alt-circle-right" style={{color:"red"}}></i>Best Quality
+                    </h5>
+                </div>
+                {/* <p>
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, ipsum?
+             <br />
+             <br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+             dolore pariatur! Enim inventore excepturi laudantium necessitatibus
+             placeat mollitia, incidunt consequatur.
+         </p> */}<Link to="menu"
+                       spy={true}
+                       smooth={true}
+                       offset={-70}
+                       duration= {500}
+                       activeclassname="selected">
                 <a href="#" className="btn">
-                    Choose a Pizza
-                </a>
+                    View our menu
+                </a></Link>
             </div>
         </section>
     );
 }
-export default About
+
+export default About;

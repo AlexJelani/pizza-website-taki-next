@@ -43,7 +43,7 @@ const Navbar = () => {
                           duration= {500}
                           activeclassname="selected" className="logo">
                         <img src="/assets/img/logo.png" alt="" width="150" height="54" /></Link>
-                    <Link to="events"
+                    <Link to="about"
                           spy={true}
                           smooth={true}
                           offset={-70}
