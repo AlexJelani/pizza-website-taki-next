@@ -1,11 +1,16 @@
-import React from 'react'
-import styles from "../styles/MenuCard.module.css"
+// MenuCard.jsx
+import React from 'react';
+import styles from '../styles/MenuCard.module.css';
 
 export const MenuCard = () => {
     return (
-        <div className={styles.container}>
-            <div className={styles.container}>
-                <img src="/assets/img/pizza.png" alt="" width="500" height="500" />
+        <div className={styles.card}>
+            <img
+                src="/assets/img/pizza.png"
+                alt=""
+                className={styles.image}
+            />
+            <div className={styles.cardContent}>
                 <h1 className={styles.title}>FIORI DI ZUCCA</h1>
                 <span className={styles.price}>$19.90</span>
                 <p className={styles.desc}>
@@ -13,5 +18,6 @@ export const MenuCard = () => {
                 </p>
             </div>
         </div>
-    )
-}
+    );
+};
+
