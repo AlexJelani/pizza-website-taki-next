@@ -13,6 +13,11 @@ export const MenuList = () => {
             </p>
             <div className={styles.wrapper}>
                 <MenuCard/>
+                <MenuCard/>
+                <MenuCard/>
+                <MenuCard/>
+                <MenuCard/>
+                <MenuCard/>
             </div>
         </div>
     )
