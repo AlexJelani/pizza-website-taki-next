@@ -5,6 +5,7 @@ import Menu from "../Components/Menu.jsx";
 import Contact from "../Components/Contact.jsx";
 import Featured from "../Components/Featured.jsx";
 import {MenuList} from "../Components/MenuList.jsx";
+import Contact2 from "../Components/Contact2.jsx";
 
 
 function Home() {
@@ -17,7 +18,7 @@ function Home() {
             {/*about menu*/}
             <MenuList/>
             {/*about contact*/}
-            {/*<Contact/>*/}
+            <Contact2/>
         </>
     );
 }

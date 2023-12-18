@@ -1,0 +1,30 @@
+/* Contact.module.css */
+
+.greySection {
+    background-color: #F0F0F0;
+    padding: 80px;
+    text-align: center;
+}
+
+.titleSections {
+    color: #333;
+}
+
+.sectionContent {
+    font-family: 'Nixie One', 'Raleway', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-sub-title, serif !important;
+    color: #333 !important;
+    font-size: 14px;
+    line-height: 1.42857143;
+}
+
+.flexcontainer{
+    display: flex;
+    justify-content: space-between;
+
+}
+.item {
+    width: 200px;
+    height: 200px;
+    background: white;
+    margin: 10px;
+}

@@ -1,33 +1,57 @@
-body {
-    margin: 0;
+/* SectionComponent.module.css */
+.uImage:not(.uHoverBox),
+.uSheet.uImage:not(.uHoverBox),
+.uGroup.uImage:not(.uHoverBox),
+.uLayoutCell.uImage:not(.uHoverBox) {
+    overflow: visible;
 }
 
-.app {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
+.uSection8 {
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://assets.nicepagecdn.com/d2cc3eaa/3955079/images/sd.jpg);
+    background-position: 50% 50%;
 }
 
-.contactsection {
-    flex: 1;
-    display: flex;
+.uShading, .uOverlap.uOverlapContrast .uHeader {
+    color: #ffffff;
 }
 
-.mapcontainer {
-    flex: 1;
-    height: 100vh;
+.uOverlap.uOverlapTransparent .uHeader,
+.uImage,
+.uGradient {
+    color: #111111;
 }
 
-.contactform {
-    background: rgba(255, 255, 255, 0.9);
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 600px;
-    width: 100%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 20px;
+.uShading, .uOverlap.uOverlapContrast .uHeader {
+    color: var(--shadingContrast);
 }
 
-.contactform h2 {
-    margin-bottom: 20px;
+.uOverlap.uOverlapTransparent .uHeader,
+.uImage,
+.uGradient {
+    color: var(--whiteContrast);
 }
+
+.uAlignCenter {
+    text-align: center;
+}
+
+.uImage,
+.uBackgroundEffectImage,
+.uVideoPoster {
+    object-fit: cover;
+    display: block;
+    vertical-align: middle;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+section {
+    display: block;
+}
+
+.u-section-8 {
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://assets.nicepagecdn.com/d2cc3eaa/3955079/images/sd.jpg);
+    background-position: 50% 50%;
+}
+
