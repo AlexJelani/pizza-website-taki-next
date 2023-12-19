@@ -6,11 +6,14 @@ import Contact from "../Components/Contact.jsx";
 import Featured from "../Components/Featured.jsx";
 import {MenuList} from "../Components/MenuList.jsx";
 import Contact2 from "../Components/Contact2.jsx";
+import Footer from "../Components/Footer.jsx";
+import ScrollToTop from "../Components/ScrollToTop.jsx";
 
 
 function Home() {
     return (
         <>
+            <ScrollToTop />
            {/*hero-section*/}
             <Featured/>
             {/* about section */}
@@ -19,6 +22,8 @@ function Home() {
             <MenuList/>
             {/*about contact*/}
             <Contact2/>
+            {/*footer*/}
+            <Footer/>
         </>
     );
 }
