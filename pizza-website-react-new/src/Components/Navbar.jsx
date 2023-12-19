@@ -1,8 +1,8 @@
 import styles from "../styles/Navbar.module.css";
 import {faPhone} from "@fortawesome/free-solid-svg-icons/faPhone"
 import {  faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
-import { Link} from "react-scroll";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {Link} from "react-scroll";
 
 
 const Navbar = () => {
