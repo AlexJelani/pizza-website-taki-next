@@ -5,6 +5,7 @@ import Menu from "../Components/Menu.jsx";
 import Contact from "../Components/Contact.jsx";
 import Featured from "../Components/Featured.jsx";
 import {MenuList} from "../Components/MenuList.jsx";
+import menuData from "../data/menuData.jsx";
 import Contact2 from "../Components/Contact2.jsx";
 import Footer from "../Components/Footer.jsx";
 import ScrollToTop from "../Components/ScrollToTop.jsx";
@@ -19,7 +20,7 @@ function Home() {
             {/* about section */}
             <About/>
             {/*about menu*/}
-            <MenuList/>
+            <MenuList menuData={menuData}/>
             {/*about contact*/}
             <Contact2/>
             {/*footer*/}
