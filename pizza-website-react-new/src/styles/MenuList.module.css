@@ -75,11 +75,20 @@
     color: #777;
 }
 
-@media screen and (max-width: 480px) {
-    .card {
-        width: 100%;
-    }
+@media screen and (max-width: 768px) {
+    /*.card {*/
+    /*    width: 100%;*/
+    /*}*/
+    /* Additional styles for smaller screens */
 
+    .wrapper {
+        flex-direction: column;
+        align-items: center; /* Optional: Stretch items to full width */
+        width: 100%;
+    ;
+    }.card {
+        width: 100%;
+         }
     .title {
         font-size: 30px;
     }
