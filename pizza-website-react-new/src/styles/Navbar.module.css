@@ -86,12 +86,16 @@
     color: #000000 ; /* Change the color on hover as needed */
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width: 768px) {
     .item:nth-child(2) {
         display: none;
     }
 
-    .item:nth-child(1) {
-        flex: 3;
+    .item:first-child {
+        flex: 1;
+    }
+
+    .item:last-child {
+        display: none;
     }
 }
