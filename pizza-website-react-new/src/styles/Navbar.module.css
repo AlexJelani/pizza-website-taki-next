@@ -85,7 +85,9 @@
 .socialicons a:hover {
     color: #000000 ; /* Change the color on hover as needed */
 }
-
+.active {
+    font-weight: bold;
+}
 @media screen and (max-width: 768px) {
     .item:nth-child(2) {
         display: none;

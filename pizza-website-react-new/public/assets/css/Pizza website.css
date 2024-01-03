@@ -235,7 +235,9 @@ section{
 	background: var(--main-color);
 	border-radius: 5rem;
 }
-
+.active {
+	font-weight: bold;
+}
 @media (max-width: 1690px){
 	section{
 		padding: 70px 2%;
