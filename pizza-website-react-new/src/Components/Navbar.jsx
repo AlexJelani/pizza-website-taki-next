@@ -50,13 +50,6 @@ const Navbar = () => {
                           duration= {500}
                           activeclassname="selected"
                         className={styles.listItem}>About</Link>
-                    <Link to="blog"
-                          spy={true}
-                          smooth={true}
-                          offset={-70}
-                          duration= {500}
-                          activeclassname="selected"
-                        className={styles.listItem}>Blog</Link>
                     <Link to="contact"
                           spy={true}
                           smooth={true}

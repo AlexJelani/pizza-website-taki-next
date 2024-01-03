@@ -4,7 +4,8 @@ import styles from '../styles/Contact2.module.css';
 
 function Contact2() {
     return (
-        <section className={`${styles.greySection} ${styles.flexcontainer}`}>
+        <section className="contact">
+        <div className={`${styles.greySection} ${styles.flexcontainer}`}>
             <div className={styles.item}>
                 <h2 id="item" className={styles.titleSections}>
                     HOURS
@@ -51,6 +52,7 @@ function Contact2() {
                     loading="lazy"
                 ></iframe>
             </div>
+        </div>
         </section>
     );
 }

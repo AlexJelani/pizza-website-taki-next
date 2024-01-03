@@ -21,6 +21,7 @@ export const MenuCard = ({ data }) => {
 
 export const MenuList = ({ menuData }) => {
     return (
+        <section className="menu">
         <div className={styles.container}>
             <h1 className={styles.title}>THE BEST PIZZA IN TOWN</h1>
             <p className={styles.desc}>
@@ -33,5 +34,6 @@ export const MenuList = ({ menuData }) => {
                 ))}
             </div>
         </div>
+        </section>
     );
 };
