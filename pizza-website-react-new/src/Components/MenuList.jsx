@@ -23,11 +23,11 @@ export const MenuList = ({ menuData }) => {
     return (
         <section className="menu">
         <div className={styles.container}>
-            <h1 className={styles.title}>THE BEST PIZZA IN TOWN</h1>
-            <p className={styles.desc}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut blandit arcu
-                in pretium molestie.
-            </p>
+            <h1 className={styles.title}>THE MENU</h1>
+            {/*<p className={styles.desc}>*/}
+            {/*    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut blandit arcu*/}
+            {/*    in pretium molestie.*/}
+            {/*</p>*/}
             <div className={styles.wrapper}>
                 {menuData.map((menuItem, index) => (
                     <MenuCard key={index} data={menuItem} />
