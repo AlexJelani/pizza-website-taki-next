@@ -3,9 +3,15 @@ import {faPhone} from "@fortawesome/free-solid-svg-icons/faPhone"
 import {  faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {Link} from "react-scroll";
+import {useState} from "react";
 
 
 const Navbar = () => {
+    const [activeLink, setActiveLink] = useState('');
+
+    const handleSetActive = (to) => {
+        setActiveLink(to);
+    };
     return (
         <div className={styles.container}>
             <div className={styles.item}>
@@ -19,22 +25,25 @@ const Navbar = () => {
             </div>
             <div className={styles.item}>
                 <ul className={styles.list}>
-                    <Link activeClass="active"
-                          to="Featured"
-                          spy={true}
-                          smooth={true}
-                          offset={-70}
-                          duration= {500}
-                          activeclassname="selected"
+                    <Link
+                        activeClass={styles.selected}
+                        to="Featured"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}
+                        onSetActive={() => handleSetActive('Featured')}
                         className={styles.listItem}>
-                        Homepage</Link>
-                    <Link to="menu"
+                        Homepage
+                    </Link>
+                    <Link activeClass={styles.selected}
+                          to="about"
                           spy={true}
                           smooth={true}
                           offset={-70}
                           duration= {500}
-                          activeclassname="selected"
-                        className={styles.listItem}>Menu</Link>
+                          onSetActive={() => handleSetActive('About')}
+                        className={styles.listItem}>About</Link>
                     <Link activeClass="active"
                           to="home"
                           spy={true}
@@ -43,19 +52,21 @@ const Navbar = () => {
                           duration= {500}
                           activeclassname="selected" className="logo">
                         <img src="/assets/img/logo.png" alt="" width="150" height="54" /></Link>
-                    <Link to="about"
+                    <Link activeClass={styles.selected}
+                          to="menu"
                           spy={true}
                           smooth={true}
                           offset={-70}
                           duration= {500}
-                          activeclassname="selected"
-                        className={styles.listItem}>About</Link>
-                    <Link to="contact"
+                          onSetActive={() => handleSetActive('Menu')}
+                        className={styles.listItem}>Menu</Link>
+                    <Link activeClass={styles.selected}
+                          to="contact"
                           spy={true}
                           smooth={true}
                           offset={-70}
                           duration= {500}
-                          activeclassname="selected"
+                          onSetActive={() => handleSetActive('Contact')}
                         className={styles.listItem}>Contact</Link>
                 </ul>
             </div>

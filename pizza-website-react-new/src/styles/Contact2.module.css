@@ -5,7 +5,9 @@
     padding: 20px; /* Decrease padding for smaller screens */
     text-align: center;
 }
-
+.sectionContact{
+    background-color: #F0F0F0;
+}
 .titleSections {
     color: #333;
 }

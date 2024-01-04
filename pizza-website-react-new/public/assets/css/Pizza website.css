@@ -159,7 +159,7 @@ section{
 	transition: all .40s ease;
 }
 .menu{
-	padding-top: 110px;
+	padding-top: 10px;
 }
 .menu-text{
 	display: flex;

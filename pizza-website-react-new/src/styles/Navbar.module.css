@@ -65,8 +65,12 @@
     margin: 20px;
     font-weight: 500;
 }
-
-
+.listItem:hover{
+    color: black; /* Change the color on hover or when selected as needed */
+}
+.selected {
+    color: black; /* Change the color for the selected state */
+}
 
 
 /* Add these styles to Navbar.module.css */
