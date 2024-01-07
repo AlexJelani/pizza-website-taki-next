@@ -36,3 +36,9 @@
 .btn:hover{
     letter-spacing: 1px;
 }
+
+@media only screen and (max-width: 768px){
+    .about-text {
+        padding-left: 20px;
+    }
+}

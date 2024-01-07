@@ -24,7 +24,7 @@ const Navbar = () => {
                 </div>
             </div>
             <div className={styles.item}>
-                <ul className={styles.list}>
+                <ul className={styles.list} >
                     <Link
                         activeClass={styles.selected}
                         to="Featured"
@@ -78,6 +78,11 @@ const Navbar = () => {
                     <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faInstagram} size="2x" />
                     </a>
+                </div>
+                <div className={styles.menu} onClick={()=>setMenuOpen(!menuOpen)}>
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
             </div>
         </div>

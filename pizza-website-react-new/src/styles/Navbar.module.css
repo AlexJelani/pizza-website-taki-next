@@ -92,16 +92,38 @@
 .active {
     font-weight: bold;
 }
+
 @media screen and (max-width: 768px) {
     .item:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+
+    }
+    .item:nth-child(2) img {
+        display: none;
+    }
+    ul.list {
+        display: none;
+        flex-direction: column;
+        margin-bottom: 0.25rem;
+        margin-top: 340px; /* Push the ul.list to the bottom */
+        background-color: white;
+        color: red;
+        width: 100%;
+
+    }
+
+
+    .texts{
         display: none;
     }
 
-    .item:first-child {
-        flex: 1;
+    .item:last-child .menu {
+        display: flex;
     }
-
-    .item:last-child {
+    .item:last-child .socialicons {
         display: none;
     }
+
 }
+
