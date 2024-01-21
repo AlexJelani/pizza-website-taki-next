@@ -79,11 +79,6 @@ const Navbar = () => {
                         <FontAwesomeIcon icon={faInstagram} size="2x" />
                     </a>
                 </div>
-                <div className={styles.menu} onClick={()=>setMenuOpen(!menuOpen)}>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
             </div>
         </div>
     );
