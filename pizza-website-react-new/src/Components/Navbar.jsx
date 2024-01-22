@@ -3,6 +3,8 @@ import {faPhone} from "@fortawesome/free-solid-svg-icons/faPhone"
 import {  faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {Link} from "react-scroll";
+import "../styles/hamburgerMenu.css"
+import {slide as Menu} from "react-burger-menu";
 
 
 const Navbar = () => {
@@ -17,54 +19,101 @@ const Navbar = () => {
                     <div className={styles.text}>090 1862 1728</div>
                 </div>
             </div>
-            <div className={styles.item}>
-                <ul className={styles.list}>
-                    <Link activeClass="active"
-                          to="Featured"
-                          spy={true}
-                          smooth={true}
-                          offset={-70}
-                          duration= {500}
-                          activeclassname="selected"
-                        className={styles.listItem}>
-                        Homepage</Link>
-                    <Link to="menu"
-                          spy={true}
-                          smooth={true}
-                          offset={-70}
-                          duration= {500}
-                          activeclassname="selected"
-                        className={styles.listItem}>Menu</Link>
-                    <Link activeClass="active"
-                          to="home"
-                          spy={true}
-                          smooth={true}
-                          offset={-70}
-                          duration= {500}
-                          activeclassname="selected" className="logo">
-                        <img src="/assets/img/logo.png" alt="" width="150" height="54" /></Link>
-                    <Link to="about"
-                          spy={true}
-                          smooth={true}
-                          offset={-70}
-                          duration= {500}
-                          activeclassname="selected"
-                        className={styles.listItem}>About</Link>
-                    <Link to="blog"
-                          spy={true}
-                          smooth={true}
-                          offset={-70}
-                          duration= {500}
-                          activeclassname="selected"
-                        className={styles.listItem}>Blog</Link>
-                    <Link to="contact"
-                          spy={true}
-                          smooth={true}
-                          offset={-70}
-                          duration= {500}
-                          activeclassname="selected"
-                        className={styles.listItem}>Contact</Link>
-                </ul>
+            <div className="menuVisible">
+                <div className={styles.item}>
+                    <ul className={styles.list}>
+                        <Link activeClass="active"
+                              to="Featured"
+                              spy={true}
+                              smooth={true}
+                              offset={-70}
+                              duration= {500}
+                              activeclassname="selected"
+                              className={styles.listItem}>
+                            Homepage</Link>
+                        <Link to="menu"
+                              spy={true}
+                              smooth={true}
+                              offset={-70}
+                              duration= {500}
+                              activeclassname="selected"
+                              className={styles.listItem}>Menu</Link>
+                        <Link activeClass="active"
+                              to="home"
+                              spy={true}
+                              smooth={true}
+                              offset={-70}
+                              duration= {500}
+                              activeclassname="selected" className="logo">
+                            <img src="/assets/img/logo.png" alt="" width="150" height="54" /></Link>
+                        <Link to="about"
+                              spy={true}
+                              smooth={true}
+                              offset={-70}
+                              duration= {500}
+                              activeclassname="selected"
+                              className={styles.listItem}>About</Link>
+                        <Link to="blog"
+                              spy={true}
+                              smooth={true}
+                              offset={-70}
+                              duration= {500}
+                              activeclassname="selected"
+                              className={styles.listItem}>Blog</Link>
+                        <Link to="contact"
+                              spy={true}
+                              smooth={true}
+                              offset={-70}
+                              duration= {500}
+                              activeclassname="selected"
+                              className={styles.listItem}>Contact</Link>
+                    </ul>
+                </div>
+            </div>
+            <div className="burgerVisble">
+                <div className={styles.item}>
+                    <ul className={styles.list}>
+                        <Menu>
+                        <Link activeClass="active"
+                              to="Featured"
+                              spy={true}
+                              smooth={true}
+                              offset={-70}
+                              duration= {500}
+                              activeclassname="selected"
+                              className={styles.listItem}>
+                            Homepage</Link>
+                        <Link to="menu"
+                              spy={true}
+                              smooth={true}
+                              offset={-70}
+                              duration= {500}
+                              activeclassname="selected"
+                              className={styles.listItem}>Menu</Link>
+                        <Link to="about"
+                              spy={true}
+                              smooth={true}
+                              offset={-70}
+                              duration= {500}
+                              activeclassname="selected"
+                              className={styles.listItem}>About</Link>
+                        <Link to="blog"
+                              spy={true}
+                              smooth={true}
+                              offset={-70}
+                              duration= {500}
+                              activeclassname="selected"
+                              className={styles.listItem}>Blog</Link>
+                        <Link to="contact"
+                              spy={true}
+                              smooth={true}
+                              offset={-70}
+                              duration= {500}
+                              activeclassname="selected"
+                              className={styles.listItem}>Contact</Link>
+                        </Menu>
+                    </ul>
+                </div>
             </div>
             <div className={styles.item}>
                 <div className={styles.socialicons}>
