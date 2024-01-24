@@ -4,7 +4,7 @@ import styles from '../styles/Contact2.module.css';
 
 function Contact2() {
     return (
-        <section className={`${styles.greySection} ${styles.flexcontainer}`}>
+        <section className={`${styles.greySection} ${styles.flexcontainer}`} id="contact">
             <div className={styles.item}>
                 <h2 id="item" className={styles.titleSections}>
                     HOURS

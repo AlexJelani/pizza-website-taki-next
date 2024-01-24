@@ -27,7 +27,7 @@ const Featured = () => {
     }, []);
 
     return (
-        <div className={`${styles.container} Featured`}>
+        <div className={`${styles.container} Featured`} id="home">
             <div
                 className={styles.arrowContainer}
                 style={{ left: 0 }}

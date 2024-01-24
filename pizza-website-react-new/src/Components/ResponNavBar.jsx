@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 import "../styles/ResponNavBar.css";
 import { CodeIcon, HamburgetMenuClose, HamburgetMenuOpen } from "./Icons.jsx";
 //TODO delete the top margin
@@ -11,58 +12,58 @@ function ResponNavBar() {
         <>
             <nav className="navbar">
                 <div className="nav-container">
-                    <NavLink exact to="/" className="nav-logo">
+                    <HashLink exact to="/#home" className="nav-logo">
                         <span>TAKI PIZZA</span>
                         {/* <i className="fas fa-code"></i> */}
                         <span className="icon">
               {/*<CodeIcon />*/}
             </span>
-                    </NavLink>
+                    </HashLink>
 
                     <ul className={click ? "nav-menu active" : "nav-menu"}>
                         <li className="nav-item">
-                            <NavLink
+                            <HashLink
                                 exact
-                                to="/"
+                                smooth to="/#home"
                                 activeClassName="active"
                                 className="nav-links"
                                 onClick={handleClick}
                             >
                                 Home
-                            </NavLink>
+                            </HashLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink
+                            <HashLink
                                 exact
-                                to="/about"
+                                smooth to="/#about"
                                 activeClassName="active"
                                 className="nav-links"
                                 onClick={handleClick}
                             >
                                 About
-                            </NavLink>
+                            </HashLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink
+                            <HashLink
                                 exact
-                                to="/menu"
+                                smooth to="/#menu"
                                 activeClassName="active"
                                 className="nav-links"
                                 onClick={handleClick}
                             >
-                                Blog
-                            </NavLink>
+                                Menu
+                            </HashLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink
+                            <HashLink
                                 exact
-                                to="/contact"
+                                smooth to="/#contact"
                                 activeClassName="active"
                                 className="nav-links"
                                 onClick={handleClick}
                             >
                                 Contact Us
-                            </NavLink>
+                            </HashLink>
                         </li>
                     </ul>
                     <div className="nav-icon" onClick={handleClick}>

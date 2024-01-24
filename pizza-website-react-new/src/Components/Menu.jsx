@@ -11,7 +11,7 @@ function Menu(){
                         <br /> the most exquisite tastes around the world
                     </p>
                 </div>
-                <div className="menu-content">
+                <div className="menu-content" id="menu">
                     <div className="row">
                         <img src="/assets/img/m1.jpg" alt="main-product1" />
                         <div className="menu-text">

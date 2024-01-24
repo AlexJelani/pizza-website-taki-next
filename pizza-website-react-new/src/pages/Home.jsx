@@ -20,7 +20,7 @@ function Home() {
             {/* about section */}
             <About/>
             {/*about menu*/}
-            <MenuList menuData={menuData}/>
+            <MenuList menuData={menuData} id="menu"/>
             {/*about contact*/}
             <Contact2/>
             {/*footer*/}
