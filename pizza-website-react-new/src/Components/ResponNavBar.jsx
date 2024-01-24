@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "../styles/ResponNavBar.css";
 import { CodeIcon, HamburgetMenuClose, HamburgetMenuOpen } from "./Icons.jsx";
-
+//TODO delete the top margin
 function ResponNavBar() {
     const [click, setClick] = useState(false);
 
@@ -12,10 +12,10 @@ function ResponNavBar() {
             <nav className="navbar">
                 <div className="nav-container">
                     <NavLink exact to="/" className="nav-logo">
-                        <span>CodeBucks</span>
+                        <span>TAKI PIZZA</span>
                         {/* <i className="fas fa-code"></i> */}
                         <span className="icon">
-              <CodeIcon />
+              {/*<CodeIcon />*/}
             </span>
                     </NavLink>
 
