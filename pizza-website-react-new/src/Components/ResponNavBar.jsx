@@ -45,7 +45,7 @@ function ResponNavBar() {
                         <li className="nav-item">
                             <NavLink
                                 exact
-                                to="/blog"
+                                to="/menu"
                                 activeClassName="active"
                                 className="nav-links"
                                 onClick={handleClick}
