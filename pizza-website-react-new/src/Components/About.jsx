@@ -9,14 +9,15 @@ function About() {
         <section className="about" id="about">
             <div className="about-img">
                 <img src="/assets/img/a.png" alt="" />
+                <img src="/assets/img/a.png" alt="" />
+                <img src="/assets/img/a.png" alt="" />
             </div>
             <div className="about-text">
                 <h2>
                     Welcome to
                     <br /> Taki Pizza
                 </h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, ipsum?<br></br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, dolore pariatur! Enim inventore excepturi laudantium necessitatibus placeat mollitia, incidunt consequatur.</p>
-
+                {/*<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, ipsum?<br></br></p>*/}
                 <div className={styles['about-inner']}>
                     <h5>
                         <i className="fas fa-arrow-alt-circle-right" style={{color:"red"}}></i>Good Quality
