@@ -9,12 +9,12 @@ function About() {
         <section className="about" id="about">
             <div className="about-img">
                 <img src="/assets/img/a.png" alt="" />
-                <img src="/assets/img/b2.png" alt="" />
-                <img src="/assets/img/b3.png" alt="" />
+                {/*<img src="/assets/img/b2.png" alt="" />*/}
+                {/*<img src="/assets/img/b3.png" alt="" />*/}
             </div>
             <div className="about-text">
                 <h2>
-                    Welcome to
+                    Welcome To
                     <br /> Taki Pizza
                 </h2>
                 {/*<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, ipsum?<br></br></p>*/}
@@ -35,13 +35,7 @@ function About() {
                         <i className="fas fa-arrow-alt-circle-right" style={{color:"red"}}></i>Best Quality
                     </h5>
                 </div>
-                {/* <p>
-             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, ipsum?
-             <br />
-             <br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
-             dolore pariatur! Enim inventore excepturi laudantium necessitatibus
-             placeat mollitia, incidunt consequatur.
-         </p> */}<Link to="menu"
+           <Link to="menu"
                        spy={true}
                        smooth={true}
                        offset={-70}

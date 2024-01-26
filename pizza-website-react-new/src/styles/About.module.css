@@ -14,10 +14,10 @@
     font-weight: 500;
 }
 
-.about-inner h5:hover {
-    transition: 1s ease;
-    transform: translateX(2rem);
-}
+/*.about-inner h5:hover {*/
+/*    transition: 1s ease;*/
+/*    transform: translateX(2rem);*/
+/*}*/
 
 .about-inner .fas {
     color: var(--clr4);

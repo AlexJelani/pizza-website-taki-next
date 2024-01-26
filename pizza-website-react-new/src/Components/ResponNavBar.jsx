@@ -13,7 +13,7 @@ function ResponNavBar() {
             <nav className="navbar">
                 <div className="nav-container">
                     <HashLink exact to="/#home" className="nav-logo">
-                        <span>TAKI PIZZA</span>
+                        <span >TAKI PIZZA</span>
                         {/* <i className="fas fa-code"></i> */}
                         <span className="icon">
               {/*<CodeIcon />*/}
