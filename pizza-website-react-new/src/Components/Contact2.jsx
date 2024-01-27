@@ -10,14 +10,13 @@ function Contact2() {
                     HOURS
                 </h2>
                 <div className={styles.sectionContent}>
+                    <b>土日営業</b>
                     <b>Saturday - Sunday</b>
                     <br />
-                    11:00 am – 7:00 pm
+                    11:00 am – 19:00
                     <br />
                     <br />
-                    <b>Saturday</b>
                     <br />
-                    4:00 pm – 12:00 am
                 </div>
             </div>
             <div className={styles.item}>
@@ -36,9 +35,10 @@ function Contact2() {
                     Find US
                 </h2>
                 <div className={styles.sectionContent}>
-                    <p>121 Rock Street 21</p>
-                    <p>Avenue, New York </p>
-                    <p>NY 92103-9000</p>
+                    <p>西馬相51 西浦町</p>
+                    <p>Nishibasō-51 Nishiurachō</p>
+                    <p>蒲郡市 愛知県 日本</p>
+                    <p>Gamagori, Aichi 443-0105, Japan</p>
                 </div>
             </div>
             <div className="map">
