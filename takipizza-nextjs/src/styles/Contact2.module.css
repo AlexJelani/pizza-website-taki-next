@@ -1,0 +1,44 @@
+/* Contact.module.css */
+
+.greySection {
+    background-color: #F0F0F0;
+    padding: 20px; /* Decrease padding for smaller screens */
+    text-align: center;
+}
+
+.titleSections {
+    color: #333;
+}
+
+.sectionContent {
+    font-family: 'Nixie One', 'Raleway', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-sub-title, serif !important;
+    color: #333 !important;
+    font-size: 14px;
+    line-height: 1.42857143;
+}
+
+.flexcontainer{
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+    justify-content: center;
+    gap: 10px;
+}
+
+.item {
+    flex: 1; /* Make items flexible to take up available space */
+    max-width: 300px; /* Limit maximum width for larger screens */
+    background: white;
+    margin: 10px;
+}
+
+/* Adjust styles for smaller screens */
+@media screen and (max-width: 768px) {
+    .greySection {
+        padding: 10px;
+    }
+
+    .item {
+        flex: 1 0 100%; /* Take up full width on smaller screens */
+        max-width: none;
+    }
+}

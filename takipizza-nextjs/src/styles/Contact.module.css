@@ -1,0 +1,57 @@
+/* SectionComponent.module.css */
+.uImage:not(.uHoverBox),
+.uSheet.uImage:not(.uHoverBox),
+.uGroup.uImage:not(.uHoverBox),
+.uLayoutCell.uImage:not(.uHoverBox) {
+    overflow: visible;
+}
+
+.uSection8 {
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://assets.nicepagecdn.com/d2cc3eaa/3955079/images/sd.jpg);
+    background-position: 50% 50%;
+}
+
+.uShading, .uOverlap.uOverlapContrast .uHeader {
+    color: #ffffff;
+}
+
+.uOverlap.uOverlapTransparent .uHeader,
+.uImage,
+.uGradient {
+    color: #111111;
+}
+
+.uShading, .uOverlap.uOverlapContrast .uHeader {
+    color: var(--shadingContrast);
+}
+
+.uOverlap.uOverlapTransparent .uHeader,
+.uImage,
+.uGradient {
+    color: var(--whiteContrast);
+}
+
+.uAlignCenter {
+    text-align: center;
+}
+
+.uImage,
+.uBackgroundEffectImage,
+.uVideoPoster {
+    object-fit: cover;
+    display: block;
+    vertical-align: middle;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+section {
+    display: block;
+}
+
+.u-section-8 {
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://assets.nicepagecdn.com/d2cc3eaa/3955079/images/sd.jpg);
+    background-position: 50% 50%;
+}
+

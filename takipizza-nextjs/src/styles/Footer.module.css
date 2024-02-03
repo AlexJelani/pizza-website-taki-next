@@ -1,0 +1,30 @@
+.copyright {
+    display: flex;
+    padding: 3rem;
+    text-align: center;
+    justify-content: space-between;
+    background-color: #d1411e;
+}
+
+.copyright i {
+    font-size: 2rem;
+    color: var(--clr2);
+}
+
+.copyright p {
+    letter-spacing: .1rem;
+    font-size: 1.5rem;
+    color: var(--clr2);
+}
+.social a {
+    padding: 1rem;
+    color: var(--clr2);
+    font-size: 1.5rem;
+}
+
+.social a:hover {
+    transform: translateY(-2rem);
+    color: var(--clr2);
+    cursor: pointer;
+    transition: 1s ease;
+}

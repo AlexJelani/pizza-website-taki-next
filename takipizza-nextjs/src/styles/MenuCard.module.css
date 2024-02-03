@@ -1,0 +1,58 @@
+/* MenuCard.module.css */
+.card {
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    cursor: pointer;
+    border: 1px solid #ddd; /* Add border for card effect */
+    border-radius: 8px; /* Add border-radius for rounded corners */
+    margin: 10px; /* Add margin between cards */
+    transition: transform 0.3s ease-in-out; /* Add transition for hover effect */
+}
+.image {
+    max-width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain the aspect ratio */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Add scale effect on hover */
+}
+.cardContent {
+    /* Styles for the content inside the card */
+    text-align: center;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #d1411e;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #666;
+}
+
+.desc {
+    text-align: center;
+    color: #777;
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        width: 100%;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+
+    .price,
+    .desc {
+        font-size: 24px;
+    }
+}

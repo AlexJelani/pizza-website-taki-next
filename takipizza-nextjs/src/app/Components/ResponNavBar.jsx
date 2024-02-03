@@ -13,12 +13,7 @@ function ResponNavBar() {
             <nav className="navbar">
                 <div className="nav-container">
                     <HashLink exact to="/#home" className="nav-logo">
-                        <img
-                            style={{ width: 85, height: "auto" }}
-                            src="/assets/img/takipizzaslogo.png"  // Replace with the actual URL or path to your logo image
-                            alt="Taki Pizza Logo"
-                        />
-                        <span style={{ color: "white" , fontWeight:"bold", textShadow: "1px 1px 2px black"}} > PIZZA</span>
+                        <span >TAKI PIZZA</span>
                         {/* <i className="fas fa-code"></i> */}
                         <span className="icon">
               {/*<CodeIcon />*/}
