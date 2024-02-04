@@ -1,4 +1,4 @@
-// Contact2.js
+
 import React from 'react';
 import styles from '../styles/Contact2.module.css';
 

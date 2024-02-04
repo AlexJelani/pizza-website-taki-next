@@ -1,5 +1,7 @@
 /* About.module.css */
+
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
 :root {
     --clr1: #f95b11;
     --clr2: #fff;
@@ -7,6 +9,31 @@
     --clr4: #f42f1d;
     --clr5: limegreen;
 }
+
+.about {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+    justify-content: space-around; /* Adjust as needed */
+    align-items: center;
+    background-color: #1f5156;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.about-img {
+    flex: 1; /* Take up 100% width on smaller screens */
+    max-width: 100%; /* Ensure image doesn't exceed container width */
+    margin-bottom: 20px; /* Add some spacing between image and aboutBox */
+}
+
+.aboutBox {
+    background-color: white;
+    padding: 20px;
+    width: 100%; /* Take up 100% width on smaller screens */
+    max-width: 500px; /* Maximum width on larger screens */
+    height: 500px;
+}
+
 .about-inner h5 {
     padding: 0 0;
     font-size: 20px;
@@ -14,25 +41,15 @@
     font-weight: 500;
 }
 
-/*.about-inner h5:hover {*/
-/*    transition: 1s ease;*/
-/*    transform: translateX(2rem);*/
-/*}*/
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center;
+    }
 
-.about-inner .fas {
-    color: var(--clr4);
-    padding-right: 1rem;
-}
-.btn{
-    display: inline-block;
-    padding: 22px 26px;
-    background: var(--main-color);
-    color: var(--bg-color);
-    font-size: 15px;
-    font-weight: 600;
-    border-radius: 5rem;
-    transition: all .38s ease;
-}
-.btn:hover{
-    letter-spacing: 1px;
+    .about-img,
+    .aboutBox {
+        width: 100%; /* Take up 100% width on smaller screens */
+    }
 }

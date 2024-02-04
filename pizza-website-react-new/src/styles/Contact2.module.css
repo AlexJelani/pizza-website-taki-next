@@ -19,14 +19,15 @@
 
 .flexcontainer{
     display: flex;
-    flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+    /*flex-wrap: wrap; !* Allow items to wrap to the next line on smaller screens *!*/
+    flex-direction: column;
     justify-content: center;
     gap: 10px;
 }
 
 .item {
     flex: 1; /* Make items flexible to take up available space */
-    max-width: 300px; /* Limit maximum width for larger screens */
+    max-width: 100%; /* Limit maximum width for larger screens */
     background: white;
     margin: 10px;
 }
